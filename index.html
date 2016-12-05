@@ -8,364 +8,285 @@
 			<link rel="stylesheet" href="css/font-awesome-ie7.min.css">
 		<![endif]-->
 		<style>
-		.two-column{
-			-webkit-column-gap: 2em;
-			-moz-column-gap: 2em;
-			column-gap: 2em;
-			-webkit-column-count: 2;
-			-moz-column-count: 2;
-			column-count: 2;
-		}
-		.two-column li {
-			-webkit-column-break-inside: avoid;
-			page-break-inside: avoid;
-			break-inside: avoid;
-		}
 		.box-shadow {
 			box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
 		}
 		.fa {
 			margin-right: 0.5em;
 		}
+		#sidenav {
+			margin-top: 0px;
+			padding-top: 38px;
+		}
+		#sidenav li {
+			padding-left: .5em;
+			margin-left: .5em;
+		}
+		#sidenav li.active {
+			border-left: .5em solid #0078D7;
+			margin-left: 0px;
+		}
 		</style>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".scrollspy">
 		<div class="page-header" id="header">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-18">
-						<h1>Matt Crane</h1>
-						<div class="type-sh1">Postdoctoral Fellow at the University of Waterloo</div>
-					</div>
-					<div class="col-md-6">
-						<img src="profile2.jpg" class="m-v-xs img-thumbnail box-shadow" />
-					</div>
+				<div class="col-md-6">
+					<img src="profile2.jpg" class="m-v-xs img-thumbnail box-shadow" />
 				</div>
-				<nav id="navbar-main" class="navbar">
-					<div class="container">
-						<div class="navbar-global theme-default">
-							<div id="navbar" class="collapse navbar-collapse">
-								<ul class="nav navbar-nav" data-scroll="smooth">
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Contact <span class="caret"></span></a>
-										<ul class="dropdown-menu">
-											<li> <a href="mailto:mcrane@snapbug.geek.nz" title="Email"><i class="fa fa-envelope-o"></i>&nbsp;Email</a></li>
-											<li> <a href="//github.com/snapbug" title="GitHub"><i class="fa fa-github"></i>&nbsp;GitHub</a></li>
-											<li> <a href="//bitbucket.org/snapbug" title="BitBucket"><i class="fa fa-bitbucket"></i>&nbsp;BitBucket</a></li>
-											<li> <a href="//scholar.google.co.nz/citations?user=dRqoj80AAAAJ" title="Google Scholar"><i class="fa fa-google"></i>&nbsp;Google Scholar</a></li>
-											<li> <a href="//dblp.uni-trier.de/pers/hd/c/Crane:Matt" title="DBLP"><i class="fa fa-square-o"></i>&nbsp;DBLP</a></li>
-											<li> <a href="//www.linkedin.com/in/matthewscrane" title="LinkedIn"><i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a></li>
-											<li> <a href="skype://matt.s.crane" title="Skype"><i class="fa fa-skype"></i>&nbsp;Skype</a></li>
-										</ul>
-									</li>
-									<li> <a href="#education">Education</a> </li>
-									<li> <a href="#publications">Publications</a> </li>
-									<li> <a href="#presentations">Posters &amp; Presentations</a> </li>
-									<li> <a href="#projects">Projects</a> </li>
-									<li> <a href="#active-involvement">Active Involvement</a> </li>
-									<li> <a href="#job-history">Job History</a> </li>
-									<li> <a href="#teaching">Teaching</a> </li>
-								</ul>
-							</div>
-						</div>
-					</div>
+				<div class="col-md-18">
+					<h1>Matt Crane</h1>
+					<div class="type-sh1">Postdoctoral Fellow at the University of Waterloo</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-md-6 scrollspy">
+				<nav>
+				<ul role="navigation" id="sidenav" class="nav side-navigation side-navigation-small theme-default" data-scroll="smooth">
+					<li class="side-nav-c2">
+						<a data-toggle="collapse" data-parent="#sidenav-small" href="#contact" aria-expanded="false" aria-controls="#contact">Contact</a>
+						<ul class="nav collapse" id="contact">
+							<li> <a href="mailto:mcrane@snapbug.geek.nz" title="Email"><i class="fa fa-envelope-o"></i>&nbsp;Email</a></li>
+							<li> <a href="//github.com/snapbug" title="GitHub"><i class="fa fa-github"></i>&nbsp;GitHub</a></li>
+							<li> <a href="//bitbucket.org/snapbug" title="BitBucket"><i class="fa fa-bitbucket"></i>&nbsp;BitBucket</a></li>
+							<li> <a href="//scholar.google.co.nz/citations?user=dRqoj80AAAAJ" title="Google Scholar"><i class="fa fa-google"></i>&nbsp;Google Scholar</a></li>
+							<li> <a href="//dblp.uni-trier.de/pers/hd/c/Crane:Matt" title="DBLP"><i class="fa fa-square-o"></i>&nbsp;DBLP</a></li>
+							<li> <a href="//www.linkedin.com/in/matthewscrane" title="LinkedIn"><i class="fa fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+							<li> <a href="skype://matt.s.crane" title="Skype"><i class="fa fa-skype"></i>&nbsp;Skype</a></li>
+						</ul>
+					</li>
+					<li class="side-nav-c2"> <a href="#education">Education</a> </li>
+					<li class="side-nav-c2"> <a href="#publications">Publications</a> </li>
+					<li class="side-nav-c2"> <a href="#presentations">Posters &amp; Presentations</a> </li>
+					<li class="side-nav-c2"> <a href="#active-involvement">Active Involvement</a> </li>
+					<li class="side-nav-c2"> <a href="#teaching">Teaching</a> </li>
+					<li class="side-nav-c2"> <a href="#job-history">Job History</a> </li>
+					<li class="side-nav-c2"> <a href="#projects">Projects</a> </li>
+				</ul>
 				</nav>
 			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<h3 id="education"> Education </h3>
-				<ul class="list-unstyled">
-					<li>
-						<h4> <strong> PhD </strong> &mdash; Computer Science, University of Otago, Mid 2012&ndash;End 2015 (Accepted February 2016; Conferred May 2016) </h4>
-						<p> Thesis Title: <a href="//ourarchive.otago.ac.nz/handle/10523/6223"><em>Improved Indexing &amp; Search Throughput</em></a>.  </p>
-						<p> Investigating various ways to make the process of indexing, and searching, web-scale collections more efficient without impacting the effectiveness of the system.  For instance, we can choose to not index certain documents, but if we chose the wrong documents then this could have a significant impact on the effectiveness.  My research was performed using the <a href="//atire.org">ATIRE</a> open source search engine, this search engine was developed at Otago and I remain actively involved in its development.  </p>
-						<p> During my candidature I was, and continue to be, an active member of the information retrieval community, having attended and presented at multiple conferences and workshops. Including <abbr title="Special Interest Group on Information Retrieval">SIGIR</abbr>, <abbr title="Conference on Information Knowledge and Management">CIKM</abbr>, and <abbr title="Australian Document Computing Symposium">ADCS</abbr>.  </p>
-						<p class="color-type-secondary"> My original topic was to do with relevance feedback and diversification, their both improving results while appearing to be performing directly opposed operations.  </p>
-					</li>
-					<li>
-						<h4> <strong> MSc (Thesis Only) with Distinction </strong> &mdash; Computer Science, University of Otago, Late 2009&ndash;Early 2011 </h4>
-						<p> Thesis Title: <a href="//otago.ourarchive.ac.nz/handle/10523/1938"><em>The New User Problem in Collaborative Filtering</em></a>.  </p>
-						<p> The new user problem is a problem that all collaborative filtering systems must face.  How can the system make recommendations for a user when it does not know what that user likes?
-						I developed new methods for a collaborative filtering system to choose which items to present to a new user for them to rate.  This technique of presenting items to the user forms a method by which the new-user problem can be alleviated for collaborative filtering systems.
-						Developed new metrics for evaluation of, and comparison between, the different methods a system might choose to select the next item.  </p>
-					</li>
-					<li>
-						<h4> <strong> BSc(Hons) First Class </strong> &mdash; Computer Science, University of Otago, 2005&ndash;2008 </h4>
-						<p> For my honours research project I worked on the <a href="//www.netflixprize.com">Netflix Prize</a> &mdash; an exercise in collaborative filtering, machine learning and data mining.  Honours projects are year long projects designed to test research ability.  </p>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<hr />
-				<h3 id="publications"> Publications </h3>
-				<ul class="list-unstyled two-column">
-					<li>
-						<p>
-						A Comparison of Document-at-a-Time and Score-at-a-Time Processing <br />
-						<strong>M&nbsp;Crane</strong>, J&nbsp;Culpepper, J&nbsp;Lin, J&nbsp;Mackenzie, and A&nbsp;Trotman <br />
-						WSDM 2017, <em>to appear</em>, 2017
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N12035">Rank-at-a-Time Query Processing</a> <br />
-						A&nbsp;Elbagoury, <strong>M&nbsp;Crane</strong>, and J&nbsp;Lin <br />
-						ICTIR 2016, pages 229&ndash;232, 2016
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/baselines-ecir2016.pdf">Toward Reproducible Baselines: The Open-Source IR Reproducibility Challenge</a> <br />
-						J&nbsp;Lin, <strong>M&nbsp;Crane</strong>, A&nbsp;Trotman, J&nbsp;Callan, I&nbsp;Chattopadhyaya, J&nbsp;Foley, G&nbsp;Ingersoll, C&nbsp;Macdonald, and S&nbsp;Vigna <br />
-						ECIR 2016, pages 408&ndash;420, 2016
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//otago.ourarchive.ac.nz/handle/10523/1938">Improved Indexing &amp; Search Throughput</a> <br />
-						<strong>M&nbsp;Crane</strong> <br />
-						PhD Thesis, 2016
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19610">Report on the SIGIR 2015 Workshop on Reproducibility, Inexplicability, and Generalizability of Results (RIGOR)</a> <br />
-						J&nbsp;Arguello, <strong>M&nbsp;Crane</strong>, F&nbsp;Diaz, J&nbsp;Lin, and A&nbsp;Trotman <br />
-						ACM SIGIR Forum 49 (2), pages 107&ndash;116, 2015
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19621">Collision Resolution in Hash Tables for Vocabulary Accumulation During Parallel Indexing</a> <br />
-						<strong>M.&nbsp;Crane</strong> and A.&nbsp;Trotman <br />
-						ADCS 2015, pages 1&ndash;4, 2015
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19622">Improving Throughput of a Pipeline Model Indexer</a> <br />
-						<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and D.&nbsp;Eyers <br />
-						ADCS 2015, 5&ndash;8, 2015
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19624">Malformed UTF-8 and Spam</a> <br />
-						<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and R.&nbsp;O'Keefe <br />
-						ADCS 2013, pages 101&ndash;104, 2013
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19623">Managing Short Postings Lists</a> <br />
-						A.&nbsp;Trotman, X.&nbsp;Jia, and <strong>M.&nbsp;Crane</strong> <br />
-						ADCS 2013, pages 113&ndash;116, 2013
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19635">Maintaining Discriminatory Power in Quantized Indexes</a> <br />
-						<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and R.&nbsp;O'Keefe <br />
-						CIKM 2013, pages 1221&ndash;1224, 2013 <br />
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19636">Diversified Relevance Feedback</a> <br />
-						<strong>M.&nbsp;Crane</strong> <br />
-						SIGIR 2013, page 1142, 2013 <br />
-						<small class="color-type-secondary">[Doctoral Consortium]</small>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//dl.acm.org/authorize?N19637">Effects of Spam Removal on Search Engine Efficiency and Effectiveness</a> <br />
-						<strong>M.&nbsp;Crane</strong> and A.&nbsp;Trotman <br />
-						ADCS 2012, pages 1&ndash;8, 2012 <br />
-						<small class="color-type-secondary">[Honourable Mention]</small>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/atire-osir2012.pdf">Towards an Efficient and Effective Search Engine</a> <br />
-						A.&nbsp;Trotman, X.&nbsp;Jia, and <strong>M.&nbsp;Crane</strong> <br />
-						SIGIR 2012 Workshop on Open Source Information Retrieval, pages 40&ndash;47, 2012
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/snip-inex2011.pdf">Snip!</a> <br />
-						A.&nbsp;Trotman and <strong>M.&nbsp;Crane</strong> <br />
-						INEX 2011 Workshop Proceedings, 2011
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="//otago.ourarchive.ac.nz/handle/10523/1938">The New User Problem in Collaborative Filtering</a> <br />
-						<strong>M.&nbsp;Crane</strong> <br />
-						MSc Thesis, 2011
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<hr />
-				<h3 id="presentations"> Posters &amp; Presentations </h3>
-				<ul class="list-unstyled two-column">
-					<li>
-						<p>
-						Query Processing Strategies in Information Retrieval <br />
-						<span class="color-type-secondary">Presentation at UWaterloo DSG Lunch Meeting 21 Sept 2016</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						Rank-at-a-Time Query Processing <br />
-						<span class="color-type-secondary">Presentation at ICTIR 2016</span> <br />
-						<span class="color-type-secondary">Poster at ICTIR 2016</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/baselines-ecir2016-pres.pdf">Toward Reproducible Baselines: The Open-Source IR Reproducibility Challenge</a> <br />
-						<span class="color-type-secondary">Presentation at ECIR 2016</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/resolution-adcs2015-pres.pdf">Collision Resolution in Hash Tables for Vocabulary Accumulation During Parallel Indexing</a> <br />
-						<span class="color-type-secondary">Presentation at ADCS 2015</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/pipelines-adcs2015-pres.pdf">Improving Throughput of a Pipeline Model Indexer</a> <br />
-						<span class="color-type-secondary">Presentation at ADCS 2015</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						The Reproducibility Challenge Overview<br />
-						<span class="color-type-secondary"> Presentation at the SIGIR <a href="//sites.google.com/site/sigirrigor/" title="RIGOR"><abbr title="Reproducibility, Inexplicability, and Generalizability of Results">RIGOR</abbr> Workshop</a> </span>
-						</p>
-					</li>
-					<li>
-						<p>
-						Designing a Hash Function for Information Retrieval  <br />
-						<span class="color-type-secondary">Presentation for the Computer Science and Information Science Seminars (July 2014)</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/pth-sgsem2014-pres.pdf">Pipes, Trees &amp; Hash</a>  <br />
-						<span class="color-type-secondary">Presentation for the Otago Computer Science Systems Group Seminar (May 2014)</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/utf-adcs2013-pos.pdf">Malformed UTF-8 &amp; Spam</a>  <br />
-						<span class="color-type-secondary">Poster presented at ADCS2013</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						<a href="files/quantization-cikm2013-pos.pdf">Maintaining Discriminatory Power in Quantized Indexes</a>  <br />
-						<span class="color-type-secondary">Poster presented at CIKM2013</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						Diversified Relevance Feedback  <br />
-						<span class="color-type-secondary">Presented at the SIGIR2013 Doctoral Consortium </span> <br />
-						<span class="color-type-secondary">Re-presented at Otago Computer Science Postgraduate Symposium 2013</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						Effects of Spam Removal on Search Engine Efficiency and Effectiveness  <br />
-						<span class="color-type-secondary">Presented at ADCS2012</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						Diversification in Information Retrieval  <br />
-						<span class="color-type-secondary">Presented at Otago Computer Science Postgraduate Symposium 2012</span>
-						</p>
-					</li>
-					<li>
-						<p>
-						The Cold-Start Problem in Collaborative Filtering  <br />
-						<span class="color-type-secondary">Presented at Otago Computer Science Postgraduate Symposium 2010</span>
-						</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<hr />
-				<div class="col-md-12">
-					<h3 id="projects"> Projects </h3>
-					<ul class="list-unstyled">
+			<div class="col-md-18">
+				<div class="row" id="education">
+					<h3> Education </h3>
+					<ul>
 						<li>
-							<p> I have been heavily involved in the development of the <a href="//atire.org">ATIRE</a> search engine. ATIRE is a research search engine written in <code>C++</code> and has been <a href="//github.com/lintool/IR-Reproducibility">demonstrated</a> to be fast at both indexing and searching. </p>
+							<h5> <strong> PhD </strong> &mdash; Computer Science, University of Otago, Mid 2012&ndash;End 2015 (Accepted February 2016; Conferred May 2016) </h5>
+							<p> Thesis Title: <a href="//ourarchive.otago.ac.nz/handle/10523/6223"><em>Improved Indexing &amp; Search Throughput</em></a>.  </p>
+							<p> Investigating various ways to make the process of indexing, and searching, web-scale collections more efficient without impacting the effectiveness of the system.  For instance, we can choose to not index certain documents, but if we chose the wrong documents then this could have a significant impact on the effectiveness.  My research was performed using the <a href="//atire.org">ATIRE</a> open source search engine, this search engine was developed at Otago and I remain actively involved in its development.  </p>
+							<p> During my candidature I was, and continue to be, an active member of the information retrieval community, having attended and presented at multiple conferences and workshops. Including <abbr title="Special Interest Group on Information Retrieval">SIGIR</abbr>, <abbr title="Conference on Information Knowledge and Management">CIKM</abbr>, and <abbr title="Australian Document Computing Symposium">ADCS</abbr>.  </p>
+							<p class="color-type-secondary"> My original topic was to do with relevance feedback and diversification, their both improving results while appearing to be performing directly opposed operations.  </p>
 						</li>
 						<li>
-							<p> I wrote the <a href="//github.com/snapbug/memcache_exporter">memcached exporter</a> for the <a href="//prometheus.io">Prometheus</a> monitoring system. This has since been incorporated as a <a href="//github.com/prometheus/memcached_exporter">project</a> under the Prometheus Github organization. </p>
-							<ul class="list-unstyled">
-								<li> snapbug/memcache_exporter: <img src="//img.shields.io/docker/pulls/snapbug/memcache-exporter.svg?maxAge=2592000&style=flat-square" /> </li>
-								<li> prometheus/memcached_exporter: <img src="//img.shields.io/docker/pulls/prom/memcached-exporter.svg?maxAge=2592000&style=flat-square" /> </li>
+							<h5> <strong> MSc (Thesis Only) with Distinction </strong> &mdash; Computer Science, University of Otago, Late 2009&ndash;Early 2011 </h5>
+							<p> Thesis Title: <a href="//otago.ourarchive.ac.nz/handle/10523/1938"><em>The New User Problem in Collaborative Filtering</em></a>.  </p>
+							<p> The new user problem is a problem that all collaborative filtering systems must face.  How can the system make recommendations for a user when it does not know what that user likes?
+							I developed new methods for a collaborative filtering system to choose which items to present to a new user for them to rate.  This technique of presenting items to the user forms a method by which the new-user problem can be alleviated for collaborative filtering systems.
+							Developed new metrics for evaluation of, and comparison between, the different methods a system might choose to select the next item.  </p>
+						</li>
+						<li>
+							<h5> <strong> BSc(Hons) First Class </strong> &mdash; Computer Science, University of Otago, 2005&ndash;2008 </h5>
+							<p> For my honours research project I worked on the <a href="//www.netflixprize.com">Netflix Prize</a> &mdash; an exercise in collaborative filtering, machine learning and data mining.  Honours projects are year long projects designed to test research ability.  </p>
+						</li>
+					</ul>
+				</div>
+				<div class="row" id="publications">
+					<hr />
+					<h3> Publications </h3>
+					<ul>
+						<li>
+							A Comparison of Document-at-a-Time and Score-at-a-Time Processing <br />
+							<strong>M&nbsp;Crane</strong>, J&nbsp;Culpepper, J&nbsp;Lin, J&nbsp;Mackenzie, and A&nbsp;Trotman <br />
+							WSDM 2017, <em>to appear</em>, 2017
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N12035">Rank-at-a-Time Query Processing</a> <br />
+							A&nbsp;Elbagoury, <strong>M&nbsp;Crane</strong>, and J&nbsp;Lin <br />
+							ICTIR 2016, pages 229&ndash;232, 2016
+						</li>
+						<li>
+							<a href="files/baselines-ecir2016.pdf">Toward Reproducible Baselines: The Open-Source IR Reproducibility Challenge</a> <br />
+							J&nbsp;Lin, <strong>M&nbsp;Crane</strong>, A&nbsp;Trotman, J&nbsp;Callan, I&nbsp;Chattopadhyaya, J&nbsp;Foley, G&nbsp;Ingersoll, C&nbsp;Macdonald, and S&nbsp;Vigna <br />
+							ECIR 2016, pages 408&ndash;420, 2016
+						</li>
+						<li>
+							<a href="//otago.ourarchive.ac.nz/handle/10523/1938">Improved Indexing &amp; Search Throughput</a> <br />
+							<strong>M&nbsp;Crane</strong> <br />
+							PhD Thesis, 2016
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19610">Report on the SIGIR 2015 Workshop on Reproducibility, Inexplicability, and Generalizability of Results (RIGOR)</a> <br />
+							J&nbsp;Arguello, <strong>M&nbsp;Crane</strong>, F&nbsp;Diaz, J&nbsp;Lin, and A&nbsp;Trotman <br />
+							ACM SIGIR Forum 49 (2), pages 107&ndash;116, 2015
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19621">Collision Resolution in Hash Tables for Vocabulary Accumulation During Parallel Indexing</a> <br />
+							<strong>M.&nbsp;Crane</strong> and A.&nbsp;Trotman <br />
+							ADCS 2015, pages 1&ndash;4, 2015
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19622">Improving Throughput of a Pipeline Model Indexer</a> <br />
+							<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and D.&nbsp;Eyers <br />
+							ADCS 2015, 5&ndash;8, 2015
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19624">Malformed UTF-8 and Spam</a> <br />
+							<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and R.&nbsp;O'Keefe <br />
+							ADCS 2013, pages 101&ndash;104, 2013
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19623">Managing Short Postings Lists</a> <br />
+							A.&nbsp;Trotman, X.&nbsp;Jia, and <strong>M.&nbsp;Crane</strong> <br />
+							ADCS 2013, pages 113&ndash;116, 2013
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19635">Maintaining Discriminatory Power in Quantized Indexes</a> <br />
+							<strong>M.&nbsp;Crane</strong>, A.&nbsp;Trotman, and R.&nbsp;O'Keefe <br />
+							CIKM 2013, pages 1221&ndash;1224, 2013 <br />
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19636">Diversified Relevance Feedback</a> <br />
+							<strong>M.&nbsp;Crane</strong> <br />
+							SIGIR 2013, page 1142, 2013 <br />
+							<small class="color-type-secondary">[Doctoral Consortium]</small>
+						</li>
+						<li>
+							<a href="//dl.acm.org/authorize?N19637">Effects of Spam Removal on Search Engine Efficiency and Effectiveness</a> <br />
+							<strong>M.&nbsp;Crane</strong> and A.&nbsp;Trotman <br />
+							ADCS 2012, pages 1&ndash;8, 2012 <br />
+							<small class="color-type-secondary">[Honourable Mention]</small>
+						</li>
+						<li>
+							<a href="files/atire-osir2012.pdf">Towards an Efficient and Effective Search Engine</a> <br />
+							A.&nbsp;Trotman, X.&nbsp;Jia, and <strong>M.&nbsp;Crane</strong> <br />
+							SIGIR 2012 Workshop on Open Source Information Retrieval, pages 40&ndash;47, 2012
+						</li>
+						<li>
+							<a href="files/snip-inex2011.pdf">Snip!</a> <br />
+							A.&nbsp;Trotman and <strong>M.&nbsp;Crane</strong> <br />
+							INEX 2011 Workshop Proceedings, 2011
+						</li>
+						<li>
+							<a href="//otago.ourarchive.ac.nz/handle/10523/1938">The New User Problem in Collaborative Filtering</a> <br />
+							<strong>M.&nbsp;Crane</strong> <br />
+							MSc Thesis, 2011
+						</li>
+					</ul>
+				</div>
+				<div class="row" id="presentations">
+					<hr />
+					<h3> Posters &amp; Presentations </h3>
+					<ul>
+						<li>
+							Query Processing Strategies in Information Retrieval <br />
+							<span class="color-type-secondary">Presentation at UWaterloo DSG Lunch Meeting 21 Sept 2016</span>
+						</li>
+						<li>
+							Rank-at-a-Time Query Processing <br />
+							<span class="color-type-secondary">Presentation at ICTIR 2016</span> <br />
+							<span class="color-type-secondary">Poster at ICTIR 2016</span>
+						</li>
+						<li>
+							<a href="files/baselines-ecir2016-pres.pdf">Toward Reproducible Baselines: The Open-Source IR Reproducibility Challenge</a> <br />
+							<span class="color-type-secondary">Presentation at ECIR 2016</span>
+						</li>
+						<li>
+							<a href="files/resolution-adcs2015-pres.pdf">Collision Resolution in Hash Tables for Vocabulary Accumulation During Parallel Indexing</a> <br />
+							<span class="color-type-secondary">Presentation at ADCS 2015</span>
+						</li>
+						<li>
+							<a href="files/pipelines-adcs2015-pres.pdf">Improving Throughput of a Pipeline Model Indexer</a> <br />
+							<span class="color-type-secondary">Presentation at ADCS 2015</span>
+						</li>
+						<li>
+							The Reproducibility Challenge Overview<br />
+							<span class="color-type-secondary"> Presentation at the SIGIR <a href="//sites.google.com/site/sigirrigor/" title="RIGOR"><abbr title="Reproducibility, Inexplicability, and Generalizability of Results">RIGOR</abbr> Workshop</a> </span>
+						</li>
+						<li>
+							Designing a Hash Function for Information Retrieval  <br />
+							<span class="color-type-secondary">Presentation for the Computer Science and Information Science Seminars (July 2014)</span>
+						</li>
+						<li>
+							<a href="files/pth-sgsem2014-pres.pdf">Pipes, Trees &amp; Hash</a>  <br />
+							<span class="color-type-secondary">Presentation for the Otago Computer Science Systems Group Seminar (May 2014)</span>
+						</li>
+						<li>
+							<a href="files/utf-adcs2013-pos.pdf">Malformed UTF-8 &amp; Spam</a>  <br />
+							<span class="color-type-secondary">Poster presented at ADCS2013</span>
+						</li>
+						<li>
+							<a href="files/quantization-cikm2013-pos.pdf">Maintaining Discriminatory Power in Quantized Indexes</a>  <br />
+							<span class="color-type-secondary">Poster presented at CIKM2013</span>
+						</li>
+						<li>
+							Diversified Relevance Feedback  <br />
+							<span class="color-type-secondary">Presented at the SIGIR2013 Doctoral Consortium </span> <br />
+							<span class="color-type-secondary">Re-presented at Otago Computer Science Postgraduate Symposium 2013</span>
+						</li>
+						<li>
+							Effects of Spam Removal on Search Engine Efficiency and Effectiveness  <br />
+							<span class="color-type-secondary">Presented at ADCS2012</span>
+						</li>
+						<li>
+							Diversification in Information Retrieval  <br />
+							<span class="color-type-secondary">Presented at Otago Computer Science Postgraduate Symposium 2012</span>
+						</li>
+						<li>
+							The Cold-Start Problem in Collaborative Filtering  <br />
+							<span class="color-type-secondary">Presented at Otago Computer Science Postgraduate Symposium 2010</span>
+						</li>
+					</ul>
+				</div>
+				<div class="row" id="active-involvement">
+					<hr />
+					<h3> Active Involvement </h3>
+					<ul>
+						<li>
+							Information Retrieval Journal (Springer)<br />
+							<span class="color-type-secondary">Reviewer</span>
+						</li>
+						<li>
+							<a title="ADCS2016" href="http://adcs-conference.org/2016/">ADCS2016</a> Program Committee<br />
+							<span class="color-type-secondary">21st Australasian Document Computing Symposium</span>
+						</li>
+						<li>
+							<a title="ADCS2015" href="//staff.scm.uws.edu.au/~lapark/adcs2015/">ADCS2015</a> Program Committee<br />
+							<span class="color-type-secondary">20th Australasian Document Computing Symposium</span>
+						</li>
+						<li>
+							<a title="ADCS2014" href="//www.cs.rmit.edu.au/adcs2014/">ADCS2014</a> Additional Reviewer<br />
+							<span class="color-type-secondary">19th Australasian Document Computing Symposium</span>
+						</li>
+					</ul>
+				</div>
+				<div class="row" id="teaching">
+					<hr />
+					<h3> Teaching </h3>
+					<ul class="list-unstyled">
+						<li>
+							<h5> <strong> Instructor </strong> &ndash; <em> University of Waterloo </em> </h5>
+							<p> Courses: </p>
+							<ul class="p-l-xs">
+								<li> <a title="CS241" href="//www.student.cs.uwaterloo.ca/~cs241/">CS241</a>: Foundations of Sequential Programming <small class="color-type-secondary"><em>[Fall 2016]</em></small> </li>
 							</ul>
 						</li>
 						<li>
-							<p> I did the majority of the background running and checking of scripts for the Reproducibility Challenge. </p>
-						</li>
-						<li>
-							<p> As mainly a learning exercise, I designed and built a community site for the game <a href="//us.battle.net/hearthstone/en/">Hearthstone</a>. The site allowed players to install a client which would upload game logs to a server. These logs would then be parsed to provide an accurate play-by-play web-viewable version of the game. During this exercise I learnt a lot about the Docker and Amazon AWS eco-systems, as well as modern front-end development suites such as React.js. </p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-12">
-					<h3 id="active-involvement"> Active Involvement </h3>
-					<ul class="list-unstyled">
-						<li>
-							<p>
-							Information Retrieval Journal (Springer)<br />
-							<span class="color-type-secondary">Reviewer</span>
-							</p>
-						</li>
-						<li>
-							<p>
-							<a title="ADCS2016" href="http://adcs-conference.org/2016/">ADCS2016</a> Program Committee<br />
-							<span class="color-type-secondary">21st Australasian Document Computing Symposium</span>
-							</p>
-						</li>
-						<li>
-							<p>
-							<a title="ADCS2015" href="//staff.scm.uws.edu.au/~lapark/adcs2015/">ADCS2015</a> Program Committee<br />
-							<span class="color-type-secondary">20th Australasian Document Computing Symposium</span>
-							</p>
-						</li>
-						<li>
-							<p>
-							<a title="ADCS2014" href="//www.cs.rmit.edu.au/adcs2014/">ADCS2014</a> Additional Reviewer<br />
-							<span class="color-type-secondary">19th Australasian Document Computing Symposium</span>
-							</p>
+							<h5> <strong> Lab Demonstrator </strong> &ndash; <em> University of Otago </em> </h5>
+							<p> A lab demonstrator has similar responsibilities to a teaching-assistant, helping students with their practical lab work.  </p>
+							<p> Courses: </p>
+							<ul class="p-l-xs">
+								<li> <a title="COMP150" href="//www.cs.otago.ac.nz/student/papers.php?name=COMP150">COMP150</a>: Practical Programming (in Python) <small class="color-type-secondary"><em>[2009]</em></small> </li>
+								<li> <a title="COSC241" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC241">COSC241</a>: Programming and Problem Solving <small class="color-type-secondary"><em>[2013, 2014, 2015]</em></small> </li>
+								<li> <a title="COSC242" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC242">COSC242</a>: Algorithms and Data Structures <small class="color-type-secondary"><em>[2014, 2015]</em></small> </li>
+								<li> <a title="COSC244" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC244">COSC244</a>: Data Communications, Networks and the Internet <small class="color-type-secondary"><em>[2014, 2015]</em></small> </li>
+							</ul>
+							<p> This demonstrating was undertaken while studying for both MSc (COMP150) and PhD (COSC241, COSC242, COSC244).  </p>
 						</li>
 					</ul>
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="container">
-				<hr />
-				<div class="col-md-12">
-					<h3 id="job-history"> Job History </h3>
+				<div class="row" id="job-history">
+					<hr />
+					<h3> Job History </h3>
 					<ul class="list-unstyled">
 						<li>
 							<p> <strong> Assistant Research Fellow </strong> &ndash; <em> University of Otago </em> </p>
@@ -387,44 +308,38 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-12">
-					<h3 id="teaching"> Teaching </h3>
+				<div class="row" id="projects">
+					<hr />
+					<h3> Projects </h3>
 					<ul class="list-unstyled">
-						<li>
-							<p> <strong> Instructor </strong> &ndash; <em> University of Waterloo </em> </p>
-							<p> Courses: </p>
-							<ul class="p-l-xs">
-								<li> <a title="CS241" href="//www.student.cs.uwaterloo.ca/~cs241/">CS241</a>: Foundations of Sequential Programming <small class="color-type-secondary"><em>[Fall 2016]</em></small> </li>
+						<p> I have been heavily involved in the development of the <a href="//atire.org">ATIRE</a> search engine. ATIRE is a research search engine written in <code>C++</code> and has been <a href="//github.com/lintool/IR-Reproducibility">demonstrated</a> to be fast at both indexing and searching.  </p>
+						<p> I wrote the <a href="//github.com/snapbug/memcache_exporter">memcached exporter</a> for the <a href="//prometheus.io">Prometheus</a> monitoring system. This has since been incorporated as a <a href="//github.com/prometheus/memcached_exporter">project</a> under the Prometheus Github organization.  </p>
+							<ul class="list-unstyled">
+								<li> snapbug/memcache_exporter: <img src="//img.shields.io/docker/pulls/snapbug/memcache-exporter.svg?maxAge=2592000&style=flat-square" /> </li>
+								<li> prometheus/memcached_exporter: <img src="//img.shields.io/docker/pulls/prom/memcached-exporter.svg?maxAge=2592000&style=flat-square" /> </li>
 							</ul>
-						</li>
-						<li>
-							<p> <strong> Lab Demonstrator </strong> &ndash; <em> University of Otago </em> </p>
-							<p> A lab demonstrator has similar responsibilities to a teaching-assistant, helping students with their practical lab work.  </p>
-							<p> Courses: </p>
-							<ul class="p-l-xs">
-								<li> <a title="COMP150" href="//www.cs.otago.ac.nz/student/papers.php?name=COMP150">COMP150</a>: Practical Programming (in Python) <small class="color-type-secondary"><em>[2009]</em></small> </li>
-								<li> <a title="COSC241" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC241">COSC241</a>: Programming and Problem Solving <small class="color-type-secondary"><em>[2013, 2014, 2015]</em></small> </li>
-								<li> <a title="COSC242" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC242">COSC242</a>: Algorithms and Data Structures <small class="color-type-secondary"><em>[2014, 2015]</em></small> </li>
-								<li> <a title="COSC244" href="//www.cs.otago.ac.nz/student/papers.php?name=COSC244">COSC244</a>: Data Communications, Networks and the Internet <small class="color-type-secondary"><em>[2014, 2015]</em></small> </li>
-							</ul>
-							<p> This demonstrating was undertaken while studying for both MSc (COMP150) and PhD (COSC241, COSC242, COSC244).  </p>
-						</li>
+						<p> I did the majority of the background running and checking of scripts for the Reproducibility Challenge.  </p>
+						<p> As mainly a learning exercise, I designed and built a community site for the game <a href="//us.battle.net/hearthstone/en/">Hearthstone</a>. The site allowed players to install a client which would upload game logs to a server. These logs would then be parsed to provide an accurate play-by-play web-viewable version of the game. During this exercise I learnt a lot about the Docker and Amazon AWS eco-systems, as well as modern front-end development suites such as React.js.  </p>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</body>
+	<a href="#top" class="back-to-top">
+		<i class="glyph glyph-up"></i>
+		<span class="sr-only">Back to top</span>
+	</a>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 $(function () {
-	$('[data-scroll="smooth"] a[href*="#"]:not([href="#"])').click(function () {
+	$('[data-scroll="smooth"] a[href*="#"]:not([href="#contact"])').click(function () {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 			var target = $(this.hash);
 		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 		if (target.length) {
 			$('html, body').animate({ scrollTop: target.offset().top }, {
-				duration: 750,
+				duration: 500,
 				easing: 'swing'
 			});
 			return false; // prevent default href
@@ -435,8 +350,7 @@ $(function () {
 $(function () {
 	var backToTop = $('.back-to-top'),
 	threshold = $('#header').height();
-	if (backToTop.length === 0 ||
-			$(document).height() < threshold) {
+	if (backToTop.length === 0 || $(document).height() < threshold) {
 		return;
 	}
 	backToTop.affix({
@@ -452,6 +366,11 @@ $(function () {
 		return false; // prevent default href
 	});
 });
+$('#sidenav').affix({
+	offset: {
+		top: $('#sidenav').offset().top,
+	}
+});
 	</script>
 	<script type="text/javascript">
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -461,8 +380,4 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-4250225-2', 'auto');
 ga('send', 'pageview');
 	</script>
-	<a href="#top" class="back-to-top">
-		<i class="glyph glyph-up"></i>
-		<span class="sr-only">Back to top</span>
-	</a>
 </html>
