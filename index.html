@@ -8,11 +8,16 @@
       <link rel="stylesheet" href="/css/font-awesome-ie7.min.css">
     <![endif]-->
     <style>
+:root {
+  --col: 208, 45, 0;
+  --base-colour: rgb(var(--col));
+  --alpha-base: rgba(var(--col), 0.15);
+}
 *::selection {
-  background: rgba(208, 45, 0, 0.1);
+  background: var(--alpha-base);
 }
 *::-moz-selection {
-  background: rgba(208, 45, 0, 0.1);
+  background: var(--alpha-base);
 }
 body {
   background: url('/cream_pixels.png');
@@ -24,23 +29,23 @@ body {
   margin-right: 0.5em;
 }
 a, a:hover, a:active {
-  color: #D02E00;
+  color: var(--base-colour);
 }
 .me {
-  background: rgba(208, 46, 0, .1);
+  background: var(--alpha-base);
   padding: .1em;
 }
 .sublabel {
   text-align: right;
-  color: rgba(208, 46, 0, .2);
+  color: var(--alpha-base);
 }
 #header {
-  border-bottom: .25em solid #D02E00;
-  box-shadow: 0px 20px 30px -20px rgba(208,45,0,0.1);
+  border-bottom: .25em solid var(--base-colour);
+  box-shadow: 0px 20px 30px -20px var(--alpha-base);
 }
 h3 {
-  border-bottom: .05em solid #D02E00;
-  box-shadow: 0px 20px 30px -20px rgba(208,45,0,0.1);
+  border-bottom: .05em solid var(--base-colour);
+  box-shadow: 0px 20px 30px -20px var(--alpha-base);
 }
 #sidenav {
   margin-top: 0px;
@@ -54,7 +59,7 @@ h3 {
   margin-left: .8em;
 }
 #sidenav > li.active {
-  border-left: .4em solid #D02E00;
+  border-left: .4em solid var(--base-colour);
   margin-left: 0;
   padding-left: .4em;
 }
@@ -67,14 +72,11 @@ li.active .subnav {
 ul {
   list-style: square;
 }
-.back-to-top {
-  background: rgba(208,45,0,.1);
-}
-.back-to-top:hover {
-  background: rgba(208,45,0,.2);
+.back-to-top, .back-to-top:hover  {
+  background: var(--alpha-base);
 }
 .back-to-top i {
-  color: #D02E00;
+  color: var(--base-colour);
 }
     </style>
   </head>
@@ -619,12 +621,14 @@ ul {
       top: $('#sidenav').offset().top,
     }
   });
+/**/
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-4250225-2', 'auto');
   ga('send', 'pageview');
+/**/
     </script>
   </body>
 </html>
