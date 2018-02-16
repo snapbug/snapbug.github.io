@@ -12,13 +12,6 @@
 	--col: 204, 000, 000;
 	--base-colour: rgb(var(--col));
 	--alpha-base: rgba(var(--col), 0.20);
-	--me: rgba(var(--col), 0.10);
-}
-*::selection {
-	background: var(--alpha-base);
-}
-*::-moz-selection {
-	background: var(--alpha-base);
 }
 body {
 	background: url('/crossword.png');
@@ -33,8 +26,6 @@ a, a:hover, a:active {
 	color: var(--base-colour);
 }
 .me {
-	/* background: var(--me); */
-	/* padding: .1em; */
 	font-weight: 600;
 }
 .sublabel {
@@ -43,11 +34,6 @@ a, a:hover, a:active {
 }
 #header {
 	border-bottom: .25em solid var(--base-colour);
-	box-shadow: 0px 20px 30px -20px var(--alpha-base);
-}
-h3 {
-	border-bottom: .05em solid var(--base-colour);
-	box-shadow: 0px 20px 30px -20px var(--alpha-base);
 }
 #sidenav {
 	margin-top: 0px;
@@ -61,9 +47,9 @@ h3 {
 	margin-left: .8em;
 }
 #sidenav > li.active {
-	border-left: .4em solid var(--base-colour);
+	border-left: .3em solid var(--base-colour);
 	margin-left: 0;
-	padding-left: .4em;
+	padding-left: .3em;
 }
 .subnav {
 	display: none;
@@ -74,11 +60,9 @@ li.active .subnav {
 ul {
 	list-style: square;
 }
-.back-to-top, .back-to-top:hover {
-	background: var(--alpha-base);
-}
-.back-to-top i {
-	color: var(--base-colour);
+p {
+	text-align: justify;
+	text-justify: inter-word;
 }
 		</style>
 	</head>
