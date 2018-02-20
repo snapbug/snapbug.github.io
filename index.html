@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Matt Crane</title>
 		<link rel="stylesheet" href="/css/winstrap.min.css" media="screen">
@@ -9,9 +9,8 @@
 		<![endif]-->
 		<style>
 :root {
-	--col: 204, 000, 000;
-	--base-colour: rgb(var(--col));
-	--alpha-base: rgba(var(--col), 0.20);
+	--base-colour: rgb(204, 000, 000);
+	--alpha-base: rgba(204, 000, 000, 0.20);
 }
 body {
 	background: url('/crossword.png');
@@ -489,7 +488,7 @@ aside {
 		</a>
 		<script src="/js/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
+		<script>
 $(function () {
 $('[data-scroll="smooth"] a[href*="#"]:not([href="#contact"])').click(function () {
 	if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
