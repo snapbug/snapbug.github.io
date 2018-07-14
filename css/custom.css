@@ -2,9 +2,9 @@
 body { background: url('/crossword.png'); }
 a, a:visited, a:hover, a:active { color: var(--base-colour); }
 section {
-	background: white;
-	color: #2a2a2a;
-	border: 1px solid #DDDDDD;
+	background: #FFFFFF;
+	color: #2A2A2A;
+	border: 1px solid #E0E0E0;
 	border-top: .25em solid var(--base-colour);
 	border-radius: .25em;
 }
@@ -45,7 +45,6 @@ li ul { list-style: disc; }
 q { font-style: italic; }
 i:not(.fa-fw){ color: white; }
 i.fa-fw, .back-to-top > i  { color: var(--base-colour); }
-/* i[type="button"]{ cursor: pointer; } */
 .note { font-size: smaller; } .note::before { content: "["; } .note::after { content: "]"; }
 .me { font-style: italic; }
 .box-shadow { box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2); }
@@ -69,6 +68,8 @@ i.fa-fw, .back-to-top > i  { color: var(--base-colour); }
 	border-left: .15em solid transparent;
 	padding-left: .5em;
 	margin: 0 0 1rem;
+	overflow: visible;
+	white-space: nowrap;
 }
 #sidenav > li.active { border-left: .15em solid var(--base-colour); }
 #sidenav i { margin-right: .25em; }
