@@ -1,4 +1,4 @@
-:root { --base-colour: #AB4642; }
+:root { --base-colour: #4363AD; }
 body { background: url('/crossword.png'); }
 a, a:visited, a:hover, a:active { color: var(--base-colour); }
 section {
