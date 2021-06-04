@@ -8,10 +8,10 @@
 		<link rel="stylesheet" href="/css/custom.css">
 	</head>
 	<body data-spy="scroll" data-target=".scrollspy" data-offset="30">
-		<div class="page-header box-shadow" id="header">
+		<div class="page-header" id="header">
 			<div class="container p-v-xs">
 				<div class="col-md-5 col-lg-5">
-					<img src="/profile2.jpg" class="img-thumbnail box-shadow" alt="Matt Crane" />
+					<img src="/profile2.jpg" class="img-thumbnail box-shadow" alt="Matt Crane" width="80%" />
 				</div>
 				<div class="col-md-15 col-lg-16">
 					<h1>Matt Crane</h1>
@@ -478,54 +478,6 @@
 		<script src="/js/jquery.min.js"></script>
 		<script src="/js/bootstrap.min.js"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121883915-1"></script>
-		<script>
-			$(function () {
-				$('[data-scroll="smooth"] a[href*="#"]:not([href="#contact"])').click(function () {
-					if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-						if (target.length) {
-							$('html, body').animate({
-								scrollTop: target.offset().top - 20
-							}, {
-								duration: 250,
-								easing: 'swing'
-							});
-							return false;
-						}
-					}
-				});
-				var backToTop = $('.back-to-top'),
-				threshold = $('#header').height();
-				if (backToTop.length === 0 || $(document).height() < threshold) {
-					return;
-				}
-				backToTop.affix({
-					offset: {
-						top: threshold
-					}
-				});
-				backToTop.click(function () {
-					$('html, body').animate({
-						scrollTop: 0
-					}, {
-						duration: 250,
-						easing: 'swing'
-					});
-					return false;
-				});
-				$('#sidenav').affix({
-					offset: {
-						top: $('#header').outerHeight(true),
-					}
-				});
-			});
-			/**/
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-121883915-1');
-			/**/
-		</script>
+		<script src="/js/custom.js"></script>
 	</body>
 </html>

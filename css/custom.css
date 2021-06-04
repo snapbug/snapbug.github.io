@@ -1,8 +1,9 @@
 :root { --base-colour: #4363AD; }
-body { background: url('/crossword.png'); }
+body { background: url('/cream_pixels.png'); }
 a, a:visited, a:hover, a:active { color: var(--base-colour); }
 section {
-	background: #FFFFFF;
+	_background: #FFFFFF;
+	background: rgba(255, 255, 255, 0.5);
 	color: #2A2A2A;
 	border: 1px solid #E0E0E0;
 	border-top: .25em solid var(--base-colour);
@@ -55,9 +56,8 @@ i.fa-fw, .back-to-top > i  { color: var(--base-colour); }
 	padding: .2em .4em;
 }
 #header {
-	background: var(--base-colour);
-	color: white;
-	text-shadow: 1px 1px 2px black;
+	color: var(--base-colour);
+	border-bottom: .25em solid #E0E0E0;
 }
 #sidenav {
 	margin-top: 24px;
