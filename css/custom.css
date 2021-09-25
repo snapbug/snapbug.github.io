@@ -1,4 +1,4 @@
-:root { --base-colour: #4363AD; }
+:root { --base-colour: #012169; }
 body { background: url('/cream_pixels.png'); }
 a, a:visited, a:hover, a:active { color: var(--base-colour); }
 section {
