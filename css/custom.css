@@ -1,11 +1,22 @@
-:root { --base-colour: #012169; }
+:root {
+	--base-colour: #012169;
+	--light-colour: #E0E0E0;
+}
+::selection {
+	background: var(--base-colour);
+	color: var(--light-colour);
+}
+::-moz-selection {
+	background: var(--base-colour);
+	color: var(--light-colour);
+}
 body { background: url('/cream_pixels.png'); }
 a, a:visited, a:hover, a:active { color: var(--base-colour); }
 section {
 	_background: #FFFFFF;
 	background: rgba(255, 255, 255, 0.5);
 	color: #2A2A2A;
-	border: 1px solid #E0E0E0;
+	border: 1px solid var(--light-colour);
 	border-top: .25em solid var(--base-colour);
 	border-radius: .25em;
 }
@@ -58,7 +69,7 @@ i.fa-fw, .back-to-top > i  { color: var(--base-colour); }
 }
 #header {
 	color: var(--base-colour);
-	border-bottom: .25em solid #E0E0E0;
+	border-bottom: .25em solid var(--light-colour);
 }
 #sidenav {
 	margin-top: 24px;
